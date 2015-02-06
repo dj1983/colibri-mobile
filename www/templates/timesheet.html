@@ -3,29 +3,47 @@
     <button menu-toggle="right" class="button button-icon icon ion-calendar"></button>
   </ion-nav-buttons>
   <ion-content>
-    <section>
+    <section class="date-wrap">
       <button class="button icon-left ion-chevron-left button-clear button-calm"></button>
-      Wednesday <br>
-      21 JAN
       <button class="button icon-left ion-chevron-right button-clear button-calm"></button>
+      <div class="date-value">
+        <span class="title">Wednesday</span>
+        <span class="value">21 JAN</span>
+      </div>
     </section>
-    <section>
-      <p>Total: 8.25 hr</p>
+    <section class="total-time">
+      <p>Total: <span class="hour">8.25 hr</span></p>
     </section>
     <section>
       <ul class="list">
         <li class="item">
-          3349 <br>
-          STEP BAU Application Support - FY2015
+          <p class="job-id">
+            3349 <br>
+            STEP BAU Application Support - FY2015
+          </p>
+          <p class="job-task">
+            Frontend Developed
+          </p>
+          <p class="job-time">
+            3.25hr
+          </p>
         </li>
         <li class="item">
-          3349 <br>
-          STEP BAU Application Support - FY2015
+          <p class="job-id">
+            3349 <br>
+            STEP BAU Application Support - FY2015
+          </p>
+          <p class="job-task">
+            Frontend Developed
+          </p>
+          <p class="job-time">
+            3.25hr
+          </p>
         </li>
       </ul>
     </section>
-    <section>
-      <button class="button icon button-positive ion-plus-round"></button>
-    </section>
   </ion-content>
+      <section>
+      <button class="button icon button-positive ion-plus-round icon-add"></button>
+    </section>
 </ion-view>
