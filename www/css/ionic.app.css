@@ -7026,16 +7026,15 @@ a.button {
 .bar {
   height: 54px;
   padding: 10px; }
+  .bar .title {
+    height: 54px;
+    line-height: 54px; }
 
 .buttons-right {
   top: 10px !important; }
 
 .ion-navicon:before, .ion-calendar:before {
   color: #fff; }
-
-.bar .title {
-  height: 54px;
-  line-height: 54px; }
 
 .has-header {
   top: 54px; }
@@ -7044,7 +7043,7 @@ a.button {
   background: #1976d2 !important;
   height: 120px; }
 
-.ion-chevron-left {
+.icon-left-arrow {
   position: absolute;
   top: 40px;
   width: 15px;
@@ -7052,7 +7051,7 @@ a.button {
   left: 5px;
   color: #fff !important; }
 
-.ion-chevron-right {
+.icon-right-arrow {
   position: absolute;
   top: 40px;
   width: 15px;
@@ -7063,43 +7062,38 @@ a.button {
 .date-value {
   text-align: center;
   padding-top: 25px; }
-
-.date-value span {
-  display: block; }
-
-.date-value span.title {
-  font-size: 16px;
-  color: #9bcef6; }
-
-.date-value span.value {
-  font-size: 40px;
-  font-weight: bold;
-  color: #fff;
-  padding-top: 15px; }
+  .date-value span {
+    display: block; }
+  .date-value span.title {
+    font-size: 16px;
+    color: #9bcef6; }
+  .date-value span.value {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 15px; }
 
 .total-time {
   height: 50px;
   line-height: 50px;
   background: #ececec;
   padding-left: 20px; }
-
-.total-time p {
-  color: #333;
-  font-size: 14px;
-  font-weight: bold; }
-
-.total-time p span.hour {
-  font-size: 20px; }
+  .total-time p {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold; }
+    .total-time p span.hour {
+      font-size: 20px; }
 
 .item p.job-id {
   color: #333;
   font-weight: bold;
-  font-size: 16px; }
-
+  font-size: 14px;
+  width: 80%; }
 .item p.job-task {
   color: #666;
-  font-size: 12px; }
-
+  font-size: 12px;
+  font-weight: bold; }
 .item p.job-time {
   position: absolute;
   right: 20px;
@@ -7107,6 +7101,8 @@ a.button {
   color: #1976d2;
   font-size: 16px;
   font-weight: bold; }
+.item p.job-notes {
+  font-size: 12px; }
 
 .icon-add {
   position: absolute;

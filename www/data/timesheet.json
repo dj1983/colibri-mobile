@@ -1,0 +1,41 @@
+[
+  {
+      "Id":66171,
+      "JobId" : 3349,
+      "Date":"02/02/2015",
+      "TaskTypeId":27,
+      "Notes":"Colibri mobile app design",
+      "Duration":2.5,
+      "BillableHour":null,
+      "UserId":41,
+      "Action":null,
+      "Result":null,
+      "Info":null
+    },
+    {
+      "Id":66478,
+      "JobId" : 3412,
+      "Date":"03/02/2015",
+      "TaskTypeId":27,
+      "Notes":"Interactive frontend development",
+      "Duration":3.00,
+      "BillableHour":null,
+      "UserId":41,
+      "Action":null,
+      "Result":null,
+      "Info":null
+    },
+    {
+      "Id":66479,
+      "JobId" : 3377,
+      "Date":"04/02/2015",
+      "TaskTypeId":27,
+      "Notes":"Interactive frontend development",
+      "Duration":4.00,
+      "BillableHour":null,
+      "UserId":41,
+      "Action":null,
+      "Result":null,
+      "Info":null
+    }
+]

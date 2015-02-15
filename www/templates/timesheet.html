@@ -4,46 +4,29 @@
   </ion-nav-buttons>
   <ion-content>
     <section class="date-wrap">
-      <button class="button icon-left ion-chevron-left button-clear button-calm"></button>
-      <button class="button icon-left ion-chevron-right button-clear button-calm"></button>
+      <button class="button icon-left ion-chevron-left button-clear button-calm icon-left-arrow"></button>
+      <button class="button icon-left ion-chevron-right button-clear button-calm icon-right-arrow"></button>
       <div class="date-value">
-        <span class="title">Wednesday</span>
-        <span class="value">21 JAN</span>
+        <span class="title">{{weekday}}</span>
+        <span class="value">{{date}}</span>
       </div>
     </section>
     <section class="total-time">
-      <p>Total: <span class="hour">8.25 hr</span></p>
+      <p>Total: <span class="hour">{{TotalTime}}hr</span></p>
     </section>
     <section>
       <ul class="list">
-        <li class="item">
-          <p class="job-id">
-            3349 <br>
-            STEP BAU Application Support - FY2015
-          </p>
-          <p class="job-task">
-            Frontend Developed
-          </p>
-          <p class="job-time">
-            3.25hr
-          </p>
-        </li>
-        <li class="item">
-          <p class="job-id">
-            3349 <br>
-            STEP BAU Application Support - FY2015
-          </p>
-          <p class="job-task">
-            Frontend Developed
-          </p>
-          <p class="job-time">
-            3.25hr
-          </p>
+        <li class="item" ng-repeat = "job in timesheet">
+          <p class="job-id">{{job.JobId}}</p>
+          <p class="job-id-label">{{job.JobId | filterjobName}}</p>
+          <p class="job-task">{{job.tasks | filtertaskName}}</p>
+          <p class="job-time">{{job.Duration}} hr</p>
+          <p class="job-notes">{{job.Notes}}</p>
         </li>
       </ul>
     </section>
   </ion-content>
       <section>
-      <button class="button icon button-positive ion-plus-round icon-add"></button>
+      <button class="button icon button-positive ion-plus-round icon-add" ng-click="addTime()"></button>
     </section>
 </ion-view>

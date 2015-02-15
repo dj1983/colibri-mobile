@@ -1,4 +1,4 @@
-angular.module('colibri', ['ionic', 'colibri.controllers'])
+angular.module('colibri', ['ionic', 'colibri.controllers','colibri.filters'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
